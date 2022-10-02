@@ -9,7 +9,7 @@
     --font-l: clamp(0.75rem,5vw + 1rem,3rem);
     --font-s: clamp(0.5rem,0.4vw + 1rem,2rem);
     --font-sl: clamp(0.4rem,12vw + 1rem,1.45rem);
-    --font-ss: clamp(0.35rem,0.25vw + 1rem,1.4rem);
+    --font-ss: clamp(0.35rem,0.25vw + 0.9rem,1.2rem);
     --font-tiny: clamp(0.35rem,0.1vw + 0.75rem,1rem);
 
     --font-family:'Poppins', sans-serif;
@@ -1241,19 +1241,24 @@ footer
     {
         padding: 0;
         padding-top: 1rem;
-        width: 80%;
+        width: 95%;
+    }
+
+    .home-titles h1
+    {
+        text-align: center;
     }
 
     .slider-content
     {
         padding-top: var(--font-xl);
-        width: 80%;
+        width: 95%;
     }
 
     .slider-automatic-content
     {
-        width: 60vw;
-        height: 60vw;
+        width: 80vw;
+        height: 80vw;
     }
 
     /* ===================about section=================== */
@@ -1268,14 +1273,19 @@ footer
     .about-perfil
     {
         padding-top: 6rem;
-        width: 90%;
+        width: 100%;
     }
 
     .about-info
     {
-        width: 80%;
+        width: 95%;
         padding-right: 0;
         padding-top: 6rem;
+    }
+
+    .about-info h1
+    {
+        text-align: center;
     }
 
     /* ===================works section=================== */
@@ -1296,7 +1306,7 @@ footer
     {
         padding-top: 2rem;
         padding-bottom: 4rem;
-        width: 80%;
+        width: 95%;
     }
 
     .form-section
@@ -1306,16 +1316,16 @@ footer
 
     .form-section h1
     {
-        width: 80%;
+        width: 95%;
     }
 
     .contact-form
     {
-        width: 80%;
+        width: 95%;
     }
 
     #form-submit
     {
-        width: 75%;
+        width: 95%;
     }
 }
