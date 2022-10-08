@@ -73,7 +73,7 @@
     position: fixed;
 
     width: 100%;
-    height: 7vh;
+    height: 8vh;
     background-color: var(--color-1);
     border-bottom: 5px solid var(--color-2);
 
@@ -167,21 +167,42 @@
     justify-content: center;
     align-items: center;
 
-    padding: 1rem;
+    /* padding: 1rem; */
     height: 100%;
+    gap: 1rem;
 }
 
 .nav-bar-item
 {
+    position:relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     list-style: none;
+    height: 100%;
+    width: min-content;
+
+    transition: 0.5s ease-in-out;
+}
+
+.nav-bar-item .cota-content
+{
+    display: flex;
+    position: absolute;
     padding: 1rem;
+    opacity: 0;
     width: 100%;
+    top:15%;
 
     transition: 0.5s ease-in-out;
 }
 
 .nav-bar-item a
 {
+    padding: 1rem;
+
     text-decoration: none;
     font-size: var(--font-ss);
     font-weight: 600;
@@ -190,24 +211,25 @@
     text-align: center;
     text-transform: uppercase;
 
-    transition: 0.5s ease-in-out;
+    transition: 0.25s ease-in-out;
 }
 
 .nav-bar-item:hover
 {
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
     background-color: var(--color-2);
 }
 
 .nav-bar-item:hover a
 {
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
     color:white;
+    transform: translateY(30%);
 }
 
 .nav-bar-item:hover .cota-content
 {
-    display: flex;
+    opacity: 1;
 }
 
 /* ===============Nav Menu (mobile)=============== */
@@ -237,6 +259,7 @@
     height: 100vh;
     background: linear-gradient(180deg, #FEC207 0%, #FFD964 100%);
 
+    padding-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,7 +277,7 @@
 .nav-manu-list
 {
     list-style: none;
-    width: 80%;
+    width: 85%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -264,11 +287,12 @@
 
 .nav-menu-item-content
 {
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
 
     display: flex;
     align-items: center;
+    /* justify-content: center; */
 }
 
 .nav-menu-item
@@ -1201,7 +1225,7 @@ footer
     font-size: var(--font-tiny);
     text-align: center;
     color: var(--color-4);
-    padding: 0.5rem;
+    padding-top: 0.5rem;
     border-top: 5px solid var(--color-2);
 }
 
