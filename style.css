@@ -3,8 +3,8 @@
 /* ===============Root=============== */
 :root
 {
-    --font-xl: clamp(2rem,5vw + 1rem,6rem);
-    --font-x: clamp(1rem,12vw + 1rem,5rem);
+    --font-xl: clamp(2rem,5vw + 1rem,4.5rem);
+    --font-x: clamp(1rem,12vw + 1rem,4rem);
     --font-medium: clamp(0.75rem,5vw + 1rem,4rem);
     --font-l: clamp(0.75rem,5vw + 1rem,3rem);
     --font-s: clamp(0.5rem,0.4vw + 1rem,2rem);
@@ -56,10 +56,9 @@ body
 .section
 {
     width: 100%;
+    /* max-width: 1980px; */
     min-height: 100vh;
     height: fit-content;
-
-
     /* background-color: var(--color-4); */
 }
 
@@ -472,7 +471,7 @@ body
 .cota-works
 {
     width: 100%;
-    padding: 2rem 2rem 0rem 2rem;
+    padding: 2rem 1rem 0rem 1rem;
     margin-top: 6rem;
 }
 
@@ -810,7 +809,7 @@ body
 
 .home-titles
 {
-    width: 75%;
+    width: 50%;
     padding: var(--font-xl);
 
     overflow: hidden;
@@ -857,7 +856,7 @@ body
 {
     color: var(--color-1);
     font-size: var(--font-medium);
-    line-height: var(--font-med);
+    line-height: var(--font-xl);
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -981,7 +980,7 @@ body
     grid-auto-flow: column;
     grid-auto-columns: 25%;
   
-    padding: 2rem;
+    padding: 1.25rem;
   
     overflow-x: auto;
     overscroll-behavior-inline: contain;
@@ -1087,7 +1086,7 @@ body
 
 .work-tag-content:hover
 {
-    transform: scale(1.05);
+    transform: scale(1.025);
 }
 
 .work-tag-info:hover
@@ -1128,9 +1127,9 @@ body
 iframe
 {
     /* filter: var(--shadow-box); */
-    padding-top: 6rem;
+    padding-top: 8rem;
     width: 40%;
-    height: 100vh;
+    height: 90vh;
     z-index: 1;
 }
 
@@ -1222,7 +1221,8 @@ textarea
 
 #form-submit:hover
 {
-    transform: translateY(-75%) scale(0.95);
+    /* transform: translateY(-50%) scale(0.95); */
+    background-color: var(--color-3);
 }
 
 /* ===================footer section=================== */
@@ -1362,5 +1362,10 @@ footer
     .contact-form
     {
         width: 95%;
+    }
+
+    body
+    {
+        background-size: 25%;
     }
 }
