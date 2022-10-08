@@ -1,5 +1,7 @@
 window.addEventListener("scroll", reveal)
 
+var revealPointFactor = 50;
+
 function reveal()
 {
     var reveals = document.querySelectorAll(".reveal");
@@ -8,7 +10,7 @@ function reveal()
     {
         var windowHeight = window.innerHeight;
         var revealTop = reveals[i].getBoundingClientRect().top;
-        var revealPoint = 150;
+        var revealPoint = revealPointFactor;
 
         if(revealTop < windowHeight-revealPoint)
         {
