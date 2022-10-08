@@ -873,6 +873,7 @@
     list-style:none;
     text-decoration: none;
     font-size: var(--font-s);
+    font-weight: bold;
     text-align: center;
     padding: 1rem;
     margin: 1rem;
@@ -884,7 +885,6 @@
 .aptitude-item:hover
 {
     background-color: var(--color-2);
-    font-weight: bold;
 
     transform: scale(1.05);
 }
@@ -997,6 +997,8 @@
     opacity: 0;
 
     transition: all 0.5s ease;
+
+    padding-bottom: 1.75rem;
 }
 
 .work-tag-info h1
@@ -1046,8 +1048,7 @@
     color:var(--color-5);
 
     font-size: var(--font-tiny);
-
-    right:200%;
+    width: 100%;
 
     transition: all 1s ease;
 }
@@ -1062,7 +1063,7 @@
     opacity: 1;
 }
 
-.work-tag-info:hover h1,.work-tag-info:hover .work-tag-footer
+.work-tag-info:hover h1,.work-tag-info:hover
 {
     right:0%;
 }
@@ -1234,6 +1235,7 @@ footer
 
     #home
     {
+        padding-top: 8rem;
         flex-direction: column;
     }
 
